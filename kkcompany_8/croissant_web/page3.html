@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <iframe src="https://showroom.one-stage.kkstream.io/embed?token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjE3N2RhODVjLTllZjgtNTVjYS05M2FkLTAyYTMyZjkwZjg2MyIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZV9pZCI6ImFmYTY4MjExLTdhMGQtNDVjOC05ZTk4LWQxZjhiMWJmMjgzMCIsInJlc291cmNlX3R5cGUiOiJSRVNPVVJDRV9UWVBFX1ZPRF9FVkVOVCJ9.MjyyLekRS0icf4WT638YGQEseqsgL63UGOu5ydHAK98RNI-6YHBnOxV0naqlSrI8yZILzU38UUvUW0kVGro3NgIuwFu4Mb-_xie5E6SpOR0vyDl2xMXhVs0bCZXaNgQpKMkepa9cvCxjvARme_tdbYY2A8UqoYCR33c5nCKz4hxPygYBnur2nC3Dx4O6PS-yML-BCkrxhF7BW9Q_AuzN8eJrkXAajuB1kGdd7QTMYkY__3H8z466oF2F9eTKOLCXeGicC8Kw7O1ckXwKSGfTAD756FKOBoV1-GsPKLs6EZijFMimZ5sbkCZyx0iR6Ka1XKtilbcIxjvbVFxEe64okQYaPGCPpVfazWShunobxuiHqQ52G4RyC74y9HAAfcjSj-27bCPQVI4ds84f9vExoyXK6g2oBubUYrWISKI_bmiGsDdLJeTOxneyzQHLkjriE5j3VmfQChgoCr66Ag9e-oLfWbdQjGAMPAqRIbzCqKILCaTrFztwzfnk_R0nGU7e94PMQQBRSM5pQ5IzEIGOMjbtavF3azqH-zLqioVK6-KDgnx1vqlo6jPTCI12sOa9E-3PIetIOiN49R9ecW7MVQfoZnVzgy9mDQCQsoJHfNedOeqT8LygwF7c-z5TjgT0r6TWfex5U7Yag0zDvTqyBvUj-UHwueHNty9eil7hXHw"
+     width="900" height="560" allow="autoplay; encrypted-media; clipboard-write" frameborder="0" allowfullscreen></iframe>
+    
+    <script>
+      window.addEventListener('message', event => {
+        if (event.data.command === 'ping') {
+          Array.from(document.querySelectorAll('iframe')).forEach(iframe => 
+            iframe?.contentWindow?.postMessage({ command: 'pong' }, '*')
+          );
+        }
+      });
+    </script>
+    
+</body>
+
+</html>
